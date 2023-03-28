@@ -1,0 +1,32 @@
+html {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+button, input, select {
+    width: 100%;
+}
+select {
+    color: gray;
+}
+option {
+    color: black;
+}
+#zip {
+    width: 50%;
+}
+input, select {
+    padding: 1rem;
+}
+input {
+    font-style: italic;
+}
+form {
+    text-align: left;
+}
