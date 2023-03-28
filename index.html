@@ -91,12 +91,16 @@
                 <fieldset>
                     <h2>Newsletter</h2>
                     <label>Select the newsletters you would like to recieve</label><br>
-                    <input type="checkbox" id="news_html" value="news_html" name="newsletter"><label for="news_html">HTML News</label><br>
-                    <input type="checkbox" id="news_css" value="news_css" name="newsletter"><label for="news_css">CSS News</label><br>
-                    <input type="checkbox" id="news_js" value="news_js" name="newsletter"><label for="news_js">Javascript News</label><br>
+                    <div class="boxes">
+                        <input type="checkbox" id="news_html" value="news_html" name="newsletter"><label for="news_html">HTML News</label><br>
+                        <input type="checkbox" id="news_css" value="news_css" name="newsletter"><label for="news_css">CSS News</label><br>
+                        <input type="checkbox" id="news_js" value="news_js" name="newsletter"><label for="news_js">Javascript News</label><br>
+                    </div>
                     <label>Newsletter format</label><br>
-                    <input type="radio" id="format_html" value="format_html" name="format"><label for="format_html">HTML</label><br>
-                    <input type="radio" id="format_plain" value="format_plain" name="format"><label for="format_plain">Plain text</label><br>
+                    <div class="boxes">
+                        <input type="radio" id="format_html" value="format_html" name="format"><label for="format_html">HTML</label><br>
+                        <input type="radio" id="format_plain" value="format_plain" name="format"><label for="format_plain">Plain text</label><br>
+                    </div>
                     <label for="topics">Other topics you'd like to hear about</label><br>
                     <textarea id="topics" name="topics"></textarea>
                 </fieldset>

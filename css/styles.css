@@ -7,34 +7,36 @@ html {
 }
 * {
     box-sizing: border-box;
+    border: 0;
 }
 header {
     padding: 1.25em 0rem;
     font-size: .7em;
-}
-header {
     background: #303242;
     color: white;
 }
-p {
-    color: gray;
-}
-h2{
-    color: #303242;
-    font-size: 1.3em;
+.wrapper, form, fieldset {
+    margin: 0 auto;
 }
 .wrapper {
     width: 90%;
-    margin: 0 auto;
 }
 form, fieldset {
     padding: 0;
-    margin: 0;
-    border: 0;
 }
 form {
     text-align: left;
     line-height: 1.7em;
+}
+h2, option {
+    color: #303242;
+    font-size: 1.2em;
+}
+p, select {
+    color: gray;
+}
+#intro {
+    margin: 2.2em 0;
 }
 #contact {
     padding-bottom: 1.5em;
@@ -44,34 +46,30 @@ form {
 }
 input, select, textarea, button {
     padding: 1.2em;
-    margin: 1.5em;
-    margin-left: 0;
-    border: 0;
+    margin: 0.5em 0.8em 1.2em 0.4em;
     border-radius: 5px;
+}
+input:not([type="radio"], [type="checkbox"]), select, textarea, button  {
+    width: 100%;
+    margin-left: 0;
 }
 input, select, textarea {
     background-color: #edeef2;
+}
+input {
+    font-style: italic;
+}
+textarea {
+    min-height: 6em;
 }
 button {
     color: white;
     background: cadetblue;
     font-size: 1.4em;
 }
-button, input:not([type="radio"], [type="checkbox"]), select, textarea {
-    width: 100%;
-}
-textarea {
-    min-height: 6em;
-}
-select {
-    color: gray;
-}
-option {
-    color: black;
-}
 #zip {
     width: 50%;
 }
-input {
-    font-style: italic;
+.boxes {
+    margin: 1em 0;
 }
