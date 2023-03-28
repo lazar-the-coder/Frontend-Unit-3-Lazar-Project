@@ -41,6 +41,8 @@ p, select {
     margin: 2.2em 0;
 }
 #contact {
+    display: flex;
+    flex-direction: column;
     padding-bottom: 1.5em;
     border-bottom: solid 2px;
 }
@@ -50,7 +52,6 @@ input, select, textarea, button {
     border-radius: 5px;
 }
 input:not([type="radio"], [type="checkbox"]), select, textarea, button  {
-    width: 100%;
     margin-left: 0;
 }
 input, select, textarea {
@@ -59,6 +60,9 @@ input, select, textarea {
 }
 input, textarea {
     font-style: italic;
+}
+textarea, button {
+    width: 100%;
 }
 textarea {
     min-height: 6em;
@@ -83,7 +87,22 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+    
+    .wrapper {
+        width: 65%;
+    }
+    label {
+        width: 25%;
+        margin: auto 0;
+    }
+    input:not([id="zip"]), select, button {
+        flex: 1 50%;
+    }
     #zip {
         width: 25%;
+    }
+    #contact {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
