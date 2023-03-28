@@ -25,6 +25,8 @@ form, fieldset {
     padding: 0;
 }
 form {
+    padding-top: 1em;
+    border-top: double 10px;
     text-align: left;
     line-height: 1.7em;
 }
@@ -41,8 +43,6 @@ p, select {
 #contact {
     padding-bottom: 1.5em;
     border-bottom: solid 2px;
-    padding-top: 1em;
-    border-top: double 10px;
 }
 input, select, textarea, button {
     padding: 1.2em;
@@ -55,8 +55,9 @@ input:not([type="radio"], [type="checkbox"]), select, textarea, button  {
 }
 input, select, textarea {
     background-color: #edeef2;
+    transition: background-color 1s;
 }
-input {
+input, textarea {
     font-style: italic;
 }
 textarea {
@@ -70,6 +71,19 @@ button {
 #zip {
     width: 50%;
 }
+#intro, :focus {
+    background-color: lightblue;
+}
+#intro {
+    margin: 0;
+    padding: 2em 0;
+}
 .boxes {
     margin: 1em 0;
+}
+
+@media screen and (min-width: 768px) {
+    #zip {
+        width: 25%;
+    }
 }
