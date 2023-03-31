@@ -60,6 +60,7 @@ input, select, textarea {
 }
 input, textarea {
     font-style: italic;
+    text-align: right;
 }
 textarea, button {
     width: 100%;
@@ -95,7 +96,7 @@ button {
         width: 25%;
         margin: auto 0;
     }
-    input:not([id="zip"]), select, button {
+    input:not([id="zip"]), select, button, .zipwrap {
         flex: 1 50%;
     }
     #zip {
