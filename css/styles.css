@@ -92,15 +92,12 @@ button {
     .wrapper {
         width: 65%;
     }
-    label {
+    label, #zip {
         width: 25%;
         margin: auto 0;
     }
     input:not([id="zip"]), select, button, .zipwrap {
         flex: 1 50%;
-    }
-    #zip {
-        width: 25%;
     }
     #contact {
         flex-direction: row;
